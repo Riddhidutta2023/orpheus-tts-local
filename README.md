@@ -26,7 +26,7 @@ A lightweight client for running [Orpheus TTS](https://huggingface.co/canopylabs
    source venv/bin/activate
    pip install -r requirements.txt
    ```
-8. Run the  commandline script:
+8. Run the  commandline script if you want to input a text file:
 
    ```python
    python gguf_cmdline.py --text_file name_of_file.txt --voice tara --output my_audio.wav
