@@ -15,21 +15,27 @@ A lightweight client for running [Orpheus TTS](https://huggingface.co/canopylabs
 2. Download the [Orpheus TTS model (orpheus-3b-0.1-ft-q4_k_m.gguf)](https://huggingface.co/isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF) in LM Studio
 3. Load the Orpheus model in LM Studio
 4. Start the local server in LM Studio (default: http://127.0.0.1:1234)
-5. Install dependencies:
+5. Create a folder  and clone the repo
    ```
+   git clone https://github.com/Riddhidutta2023/orpheus-tts-local.git
+   ```
+6. cd into the repo
+7. Install dependencies:
+   ```shell
    python3 -m venv venv
    source venv/bin/activate
    pip install -r requirements.txt
    ```
-6. Run the script:
-   ```
-   python gguf_orpheus.py --text "Hello, this is a test" --voice tara
+8. Run the  commandline script:
+
+   ```python
+   python gguf_cmdline.py --text_file name_of_file.txt --voice tara --output my_audio.wav
    ```
 
-## Usage
+## GUI Version
 
-```
-python gguf_orpheus.py --text "Your text here" --voice tara --output "output.wav"
+```python
+python gguf_gui.py 
 ```
 
 ### Options
