@@ -1,3 +1,4 @@
+#Now this file allows you to specify input file in text format
 import argparse
 import wave
 import time
