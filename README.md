@@ -41,6 +41,7 @@ python gguf_gui.py
 ### Options
 
 - `--text`: The text to convert to speech
+- `--text_file`:Allows you to spacify any text file as input in local folder
 - `--voice`: The voice to use (default: tara)
 - `--output`: Output WAV file path (default: auto-generated filename)
 - `--list-voices`: Show available voices
